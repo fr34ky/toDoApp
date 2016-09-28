@@ -83,7 +83,7 @@ class TodoApp {
     protected function delete($elemKey)
     {
         unset($this->entry[$elemKey]);
-        $this->show('Stelle '.$elemKey.' im ToDo-Array erfolgreich <strong>gelöscht</strong>:');
+        $this->show('Key '.$elemKey.' im ToDo-Array erfolgreich <strong>gelöscht</strong>:');
         $this->entry = array_merge(array(), $this->entry);
         $this->updateSession();
         $this->show('im ToDo-Array Schlüssel erfolgreich <strong>aktualisiert</strong>:');
